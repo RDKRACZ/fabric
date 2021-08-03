@@ -1,4 +1,4 @@
-name: Update Gradle Wrapper
+name: Update Gradle Wrapper and validate
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -9,3 +9,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Update Gradle Wrapper
         uses: gradle-update/update-gradle-wrapper-action@v1.0.14
+      - name: Gradle validation
+        uses: gradle/wrapper-validation-action@v1.0.4
