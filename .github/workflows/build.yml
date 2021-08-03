@@ -10,7 +10,7 @@ jobs:
       image: openjdk:${{ matrix.java }}
       options: --user root
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2.3.4
       - uses: gradle/wrapper-validation-action@v1
       - run: ./gradlew check build publishToMavenLocal --stacktrace --parallel
       - run: mkdir run && echo "eula=true" >> run/eula.txt
