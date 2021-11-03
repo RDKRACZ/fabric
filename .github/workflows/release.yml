@@ -8,7 +8,7 @@ jobs:
       options: --user root
     steps:
       - run: apt update && apt install git -y && git --version
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.4.0
         with:
           fetch-depth: 0
       - uses: FabricMC/fabric-action-scripts@v1
