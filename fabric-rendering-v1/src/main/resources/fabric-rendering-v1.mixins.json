@@ -3,6 +3,7 @@
   "package": "net.fabricmc.fabric.mixin.client.rendering",
   "compatibilityLevel": "JAVA_16",
   "client": [
+    "CapeFeatureRendererMixin",
     "MixinArmorFeatureRenderer",
     "MixinBlockColorMap",
     "MixinBuiltinModelItemRenderer",
@@ -14,7 +15,8 @@
     "LivingEntityRendererAccessor",
     "MixinBlockEntityRenderers",
     "MixinEntityRenderers",
-    "ScreenMixin"
+    "ScreenMixin",
+    "DimensionEffectsAccessor"
   ],
   "injectors": {
     "defaultRequire": 1
