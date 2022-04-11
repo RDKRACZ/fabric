@@ -10,7 +10,7 @@ jobs:
       image: openjdk:${{ matrix.java }}
       options: --user root
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v3.0.0
       - run: ./gradlew check build --stacktrace --parallel
       - run: mkdir run && echo "eula=true" >> run/eula.txt
       - run: ./gradlew runAutoTestServer --stacktrace
