@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Update Gradle Wrapper
-        uses: gradle-update/update-gradle-wrapper-action@v1.0.15
+        uses: gradle-update/update-gradle-wrapper-action@v1.0.18
       - name: Gradle validation
         uses: gradle/wrapper-validation-action@v1.0.4
